@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 98%);
+    padding: 1.5rem 0;
+}
+.cardFeature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 3rem;
+}
+
+.cardFeature .content{
+    width: 40.5%;
+    text-align: center;
+}
+.cardFeature .content h2{
+    font-weight: 200;
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+.cardFeature .content h1{
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+.cardFeature .content p{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: hsl(229, 6%, 66%);
+}
+.cards{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards .colOne{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    height: 12rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: white;
+    justify-content: space-between;
+}
+.card .cardContent h3{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: hsl(234, 12%, 34%);
+}
+.card .cardContent p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: hsl(229, 6%, 66%);
+}
+.card .image{
+    display: flex;
+    justify-content: end;
+}
+.card .image img{
+    width: 3rem;
+    height: 3rem;
+    align-self: flex-end;
+}
+
+
+/* media qurey */
+@media screen and (min-width:1440px) {
+    main{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:376px) {
+    main{
+        padding: 4rem 0;
+    }
+    .cardFeature .content{
+        width: 99%;
+    }
+    .cardFeature .content h2{
+        font-size: 1.5rem;
+    }
+    .cardFeature .content h1{
+        font-size: 1.5rem;
+    }
+    .cardFeature{
+        gap: 2rem;
+    }
+    
+}
